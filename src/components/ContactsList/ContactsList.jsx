@@ -26,7 +26,7 @@ function ContactsList() {
 
   return (
     <ul className={css.list}>
-      {isLoading && !error && contacts.length === 0 && <Loader />}
+      {isLoading && !error && <Loader />}
       {error && <b>{error}</b>}
       {contacts.length > 0 &&
         visibleEl.map(({ id, name, phone }) => {

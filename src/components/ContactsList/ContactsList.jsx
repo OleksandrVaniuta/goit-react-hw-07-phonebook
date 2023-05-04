@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/operation';
-
 import Loader from 'components/loader';
 import {
   selectIsLoading,
